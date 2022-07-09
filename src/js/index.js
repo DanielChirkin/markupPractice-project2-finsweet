@@ -1,4 +1,12 @@
-import { Fancybox } from '../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.js'
+import * as $ from 'jquery'
+import mixitup from 'mixitup'
+import slick from 'slick-carousel'
+import { Fancybox } from "@fancyapps/ui"
+
+import "@fancyapps/ui/dist/fancybox.css"
+import "slick-carousel/slick/slick.css"
+import "@/scss/style.scss"
+
 import faqAccordion from './plugings/accordion-plugin.js'
 import initMap from "./utils/contacts-google-maps.js"
 

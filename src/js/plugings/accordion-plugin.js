@@ -1,3 +1,5 @@
+import * as $ from 'jquery'
+
 // to make it work you need:
 
 // 1. to add these data attributes
