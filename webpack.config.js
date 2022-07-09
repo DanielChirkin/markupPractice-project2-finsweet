@@ -45,7 +45,12 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'resolve-url-loader',
-          'sass-loader'
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true, // <-- !!IMPORTANT!!
+            }
+          }
         ]
       },
       {
