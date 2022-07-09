@@ -1,0 +1,22 @@
+// === experience section ===
+.experience__inner {
+}
+.experience__list {
+  display: flex;
+  justify-content: space-between;
+}
+.experience__item {
+  display: flex;
+  flex-direction: column;
+  
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.experience__count {
+  color: #661CE7;
+  margin-bottom: 2px;
+}
+.experience__title {
+  opacity: .7;
+}

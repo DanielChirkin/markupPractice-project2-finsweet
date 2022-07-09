@@ -1,0 +1,68 @@
+// === blog section ===
+.blog__inner {
+}
+.blog__title {
+  margin-bottom: 47px;
+}
+.blog__categories {
+  margin-bottom: 46px;
+}
+.blog__categories-list {
+  display: flex;
+}
+.blog__categories-item {
+  
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.blog__categories-btn {
+  position: relative;
+  background: none;
+
+  &::after {
+    content: '';
+    background: $basic-background;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 0%;
+    border-radius: 3px;
+    transition: .3s;
+  }
+  
+  &:hover::after, &.mixitup-control-active::after {
+    width: 100%;
+  }
+}
+ul.blog__card-box {
+  display: grid;
+  grid-template: auto / repeat(3, 1fr);
+  gap: 64px 32px 
+}
+li.blog__card {
+  max-width: 405px;
+}
+.blog__card-link {
+}
+.blog__card-image-box {
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.blog__card-meta {
+  color: #939191;
+  margin: 24px 0 16px 0;
+}
+.blog__card-content {
+}
+.blog__card-title {
+  margin-bottom: 16px;
+}
+.blog__card-desc {
+  color: #232536;
+}

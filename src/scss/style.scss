@@ -1,0 +1,166 @@
+@import "./utils/_reset.scss";
+@import "./utils/_fonts.scss";
+
+$basic-color: #1E1B1B;
+$basic-background: #FF6433;
+$basic-line-height: 175%;
+$basic-font-weight: 600;
+
+html, body {
+  font-family: 'Manrope', sans-serif;
+  color: $basic-color;
+  line-height: $basic-line-height;
+  font-weight: $basic-font-weight;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.button {
+  background: $basic-background;
+  font-size: 18px;
+  border-radius: 12px;
+  padding: 16px 40px;
+  color: #fff;
+  transition: .3s;
+  display: inline-block;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.heading2 {
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+}
+.heading3 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+}
+
+.title01 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+}
+.title02 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+}
+.body01 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 175%;
+}
+.body02 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+}
+
+.center {
+  text-align: center;
+}
+
+.visually--hidden {
+  display: none;
+}
+/* ========================================================= */ 
+
+/* === header === */
+@import "./_header.scss";
+
+
+/* === offer section === */
+.main__offer {
+  background: #F2F2F2;
+  padding: 128px 0;
+}
+@import "./_main__offer.scss";
+
+/* === process section === */
+.main__process {
+  padding: 134px 0;
+}
+@import "./_main__process.scss";
+
+/* === cta section === */
+.main__cta {
+  background: url(../images/cta-img-2.jpg) right no-repeat,
+              url(../images/cta-img-1.jpg) left repeat,;
+}
+@import "./_main__cta.scss";
+
+/* === experience section === */
+.main__experience {
+  padding: 48px 0;
+}
+@import "./_main__experience.scss";
+
+/* === brands section === */
+.main__brands {
+  padding: 128px 0 81px 0;
+  background: #E2E6E9;
+}
+@import "./_main__brands.scss";
+
+/* === blog section === */
+.main__blog {
+  padding: 131px 0 136px 0;
+}
+@import "./_main__blog.scss";
+
+/* === testimonial section === */
+.main__testimonial {
+  padding: 128px 0;
+  background: #F2F2F2;
+  mix-blend-mode: multiply;
+}
+@import "./_main__testimonial.scss";
+
+/* === FAQ section === */
+.main__faq {
+  padding: 128px 0;
+  background: #E2E6E9;
+}
+@import "./_main__faq.scss";
+
+/* === contacts section === */
+.main__contacts {
+  padding: 121px 0 178px;
+}
+@import "./_main__contacts.scss";
+
+/* === map section === */
+.main__map {
+  position: relative;
+}
+@import "./_main__map.scss";
+
+
+/* === Footer === */
+@import "./_footer.scss";
+
+
+/* ========================================================= */
+/* === media queries === */
+@import "./_media.scss";

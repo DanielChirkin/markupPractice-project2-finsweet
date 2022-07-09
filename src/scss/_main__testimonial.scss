@@ -1,0 +1,108 @@
+// === testimonial section ===
+.testimonial__inner {
+  display: flex;
+  flex-direction: column;
+}
+.testimonial__title {
+  margin-bottom: 76px;
+}
+.testimonial__slide-box {
+  margin: 0 -24px;
+}
+.testimonial__slide {
+  padding: 72px;
+  width: 100%;
+  background: #fff;
+}
+.slick-track {
+  display: flex;
+  width: 100%;
+
+  .slick-slide {
+    margin: 0 24px;
+    width: 100%;
+  }
+}
+.testimonial__slide-content {
+}
+.testimonial__person {
+  display: flex;
+  gap: 0 16px;
+  margin-bottom: 24px;
+}
+.testimonial__person-ava {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial__person-info {
+}
+.testimonial__person-name {
+}
+.testimonial__person-city {
+  color: #939191;
+}
+.testimonial__text {
+}
+.testimonial__controls {
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonial__controls-dots {
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+
+  .slick-dots {
+    display: flex;
+
+    li:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    li.slick-active button {
+      background: $basic-background;
+    }
+
+    li button {
+      font-size: 0;
+      width: 32px;
+      height: 4px;
+      border-radius: 4px;
+      background: #939191;
+    }
+
+  }
+}
+.testimonial__controls-arrows {
+  position: absolute;
+  top: 67%;
+  right: 0;
+  transform: translateY(-50%);
+}
+.testimonial__arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: .3s;
+  
+
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  &:hover {
+    fill: #fff;
+    background: $basic-color;
+    transform: scale(1.292);
+
+    path {
+      fill: #fff;
+    }
+  }
+}

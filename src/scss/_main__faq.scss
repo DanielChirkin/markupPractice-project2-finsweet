@@ -1,0 +1,67 @@
+// === FAQ section ===
+.faq__inner {
+}
+.faq__title {
+  margin-bottom: 86px;
+}
+.faq__accordion {
+}
+.faq__accordion-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq__accordion-item {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  max-width: 896px;
+  
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+.faq__accordion-content {
+  padding: 40px 0 38px 40px;
+  margin-right: 63px;
+  width: 100%;
+}
+.faq__accordion-title {
+  cursor: pointer;
+}
+.faq__accordion-text {
+  margin-top: 16px;
+  color: #939191;
+  display: none;
+}
+.faq__accordion-control {
+  position: relative;
+  cursor: pointer;
+  flex-basis: 100%;
+  margin-top: 32px;
+  margin-right: 40px;
+  max-width: 51px;
+  height: 48px;
+  background: $basic-background;
+
+
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 17px;
+    background: #fff;
+    transform: translateY(-50%) translateX(-50%);
+    transition: .3s;
+  }
+
+  &::before {
+    transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  }
+
+  .open &::before {
+    transform: translateY(-50%) translateX(-50%) rotate(180deg);
+  }
+}

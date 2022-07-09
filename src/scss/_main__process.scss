@@ -1,0 +1,80 @@
+// ======== process section ========
+.process__inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1087px;
+}
+.process__left {
+  max-width: 524px;
+}
+.process__left-title {
+  margin-bottom: 16px;
+}
+.process__left-paragraph {
+  margin-bottom: 32px;
+  max-width: 437px;
+  opacity: .6;
+}
+.process__left-btn {
+}
+.process__right {
+  margin-left: 20px;
+  max-width: 432px;
+}
+.process__list {
+}
+.process__item {
+  margin-bottom: 16px;
+  display: flex;
+}
+.process__right-decor {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 72px;
+}
+.process__circle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #661CE7;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 75%;
+  color: #fff;
+  border-radius: 50%;
+  width: 72px;
+  height: 100%;
+  max-height: 72px;
+  overflow: hidden;
+  margin-bottom: 16px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    background: #ffffff3d;
+    bottom: -30%;
+    right: 20%;
+   
+  }
+}
+.process__line {
+  height: 100%;
+  align-self: center;
+  border-right: 2px dashed #FF6433;
+}
+
+.process__right-content {
+  margin-left: 24px;
+  margin-top: 3%;
+}
+.process__right-title {
+  margin-bottom: 8px;
+}
+.process__right-body {
+  opacity: .6;
+}
