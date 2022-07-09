@@ -1,0 +1,22 @@
+{
+  "name": "markup-practice-project2-finsweet",
+  "version": "1.0.0",
+  "description": "Markup Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielChirkin/markupPractice-project2-finsweet.git"
+  },
+  "keywords": [
+    "DanielChirkin"
+  ],
+  "author": "Daniel Chirkin <nickobalick22@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielChirkin/markupPractice-project2-finsweet/issues"
+  },
+  "homepage": "https://github.com/DanielChirkin/markupPractice-project2-finsweet#readme"
+}
