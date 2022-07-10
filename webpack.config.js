@@ -18,7 +18,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      'src#': path.resolve(__dirname, 'src')
+      '@': path.resolve(__dirname, 'src')
     }
   },
   plugins: [
@@ -45,13 +45,6 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'sass-loader'
-          // 'resolve-url-loader',
-          // {
-          //   loader: 'sass-loader',
-          //   options: {
-          //     sourceMap: true, // <-- !!IMPORTANT!!
-          //   }
-          // }
         ]
       },
       {

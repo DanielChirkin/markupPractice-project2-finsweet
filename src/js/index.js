@@ -5,7 +5,7 @@ import { Fancybox } from "@fancyapps/ui"
 
 import "@fancyapps/ui/dist/fancybox.css"
 import "slick-carousel/slick/slick.css"
-import "src#/scss/style.scss"
+import "@/scss/style.scss"
 
 import faqAccordion from './plugings/accordion-plugin.js'
 import initMap from "./utils/contacts-google-maps.js"
