@@ -6,7 +6,7 @@ $roboto-font-path: "@/fonts/Roboto";
   font-weight: 500;
   font-style: normal;
   src:  local('Manrope'),
-        url('#{$manrope-font-path}/Manrope-medium.woff2') format('woff2'),
+        url('#{$manrope-font-path}/Manrope-medium.woff2') format('font-woff2'),
         url('#{$manrope-font-path}/Manrope-medium.woff') format('woff'),
         url('#{$manrope-font-path}/Manrope-medium.eot') format('eot');
   font-display: swap;
