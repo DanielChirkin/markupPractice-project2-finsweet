@@ -10,6 +10,10 @@ import "@/scss/style.scss"
 import faqAccordion from './plugings/accordion-plugin.js'
 import initMap from "./utils/contacts-google-maps.js"
 
+
+// google maps
+window.initMap = initMap
+
 $(function() {
   // smooth scrolling
   $('a[href^=\\#]').on('click', function(event){     
@@ -83,9 +87,6 @@ $(function() {
   }
 
   $('.contacts__form').on('submit', onSubmit)
-
-  // google maps
-  initMap()
 
   // burger
   $('.header__top-burger, .header__nav-item a').on('click', function() {
