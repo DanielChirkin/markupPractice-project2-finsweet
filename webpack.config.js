@@ -47,7 +47,7 @@ module.exports = {
           {
             loader: 'resolve-url-loader',
             options: {
-              debug: true
+              debug: false
             }
           },
           {
