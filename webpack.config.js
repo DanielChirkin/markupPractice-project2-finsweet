@@ -46,6 +46,9 @@ module.exports = {
           'css-loader',
           {
             loader: 'resolve-url-loader',
+            options: {
+              debug: true
+            }
           },
           {
             loader: "sass-loader",
