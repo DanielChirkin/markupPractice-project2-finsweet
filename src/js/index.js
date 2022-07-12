@@ -11,10 +11,10 @@ import faqAccordion from './plugings/accordion-plugin.js'
 import initMap from "./utils/contacts-google-maps.js"
 
 
-// google maps
-window.initMap = initMap
-
 $(function() {
+  // google maps
+  window.initMap = initMap
+
   // smooth scrolling
   $('a[href^=\\#]').on('click', function(event){     
     event.preventDefault()
