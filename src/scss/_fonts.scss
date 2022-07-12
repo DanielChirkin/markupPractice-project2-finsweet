@@ -1,0 +1,55 @@
+$manrope-font-path: "../fonts/Manrope";
+$roboto-font-path: "../fonts/Roboto";
+
+@font-face {
+  font-family: Manrope;
+  font-weight: 500;
+  font-style: normal;
+  src:  local('Manrope'),
+        url('#{$manrope-font-path}/Manrope-Medium.woff2') format('woff2'),
+        url('#{$manrope-font-path}/Manrope-Medium.woff') format('woff'),
+        url('#{$manrope-font-path}/Manrope-Medium.eot') format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Manrope;
+  font-weight: 600;
+  font-style: normal;
+  src:  local('Manrope'),
+        url('#{$manrope-font-path}/Manrope-SemiBold.woff2') format('woff2'),
+        url('#{$manrope-font-path}/Manrope-SemiBold.woff') format('woff'),
+        url('#{$manrope-font-path}/Manrope-SemiBold.eot') format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Manrope;
+  font-weight: 700;
+  font-style: normal;
+  src:  local('Manrope'),
+        url('#{$manrope-font-path}/Manrope-Bold.woff2') format('woff2'),
+        url('#{$manrope-font-path}/Manrope-Bold.woff') format('woff'),
+        url('#{$manrope-font-path}/Manrope-Bold.eot') format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Manrope;
+  font-weight: 800;
+  font-style: normal;
+  src:  local('Manrope'),
+        url('#{$manrope-font-path}/Manrope-ExtraBold.woff2') format('woff2'),
+        url('#{$manrope-font-path}/Manrope-ExtraBold.woff') format('woff'),
+        url('#{$manrope-font-path}/Manrope-ExtraBold.eot') format('eot');
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
+  src:  local('Roboto'),
+        url('#{$roboto-font-path}/Roboto-Medium.woff2') format('font-woff2'),
+        url('#{$roboto-font-path}/Roboto-Medium.woff') format('font-woff'),
+        url('#{$roboto-font-path}/Roboto-Medium.eot') format('font-eot');
+  font-display: swap;
+}

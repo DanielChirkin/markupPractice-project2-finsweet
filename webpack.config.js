@@ -44,11 +44,16 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'resolve-url-loader',
           {
-            loader: 'sass-loader',
+            loader: 'resolve-url-loader',
             options: {
-              sourceMap: true, // <-- !!IMPORTANT!!
+              debug: false
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true
             }
           }
         ]
