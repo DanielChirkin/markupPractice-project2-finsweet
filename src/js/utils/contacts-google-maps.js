@@ -1,5 +1,3 @@
-var map
-
 function contactsMap() {
   const ADDRESS = {lat: 40.7048195, lng: -74.0106324}
 
@@ -185,7 +183,7 @@ function contactsMap() {
     ]
   }
 
-  map = new google.maps.Map(document.getElementById('map'), options);
+  const map = new google.maps.Map(document.getElementById('map'), options);
 }
 
 export default contactsMap
