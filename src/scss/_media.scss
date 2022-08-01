@@ -156,11 +156,13 @@
     justify-content: center;
   }
   .header__nav-item {
+    display: inline-block;
     &:not(:last-child) {
       margin: 0 0 32px;
     }
   }
   .header__nav-link {
+    display: inline-block;
     &::after {
       background: #fff;
     }

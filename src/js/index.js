@@ -14,6 +14,31 @@ import initMap from "./utils/contacts-google-maps.js"
 window.initMap = initMap
 
 $(function() {
+  // burger
+  $('[data-header-burger], .header__nav-item a').on('click', function() {
+    if ( $('[data-header-burger]').css('display') === 'none' ) return
+
+    $('.header__top').toggleClass('header__top--open')
+
+    if (TopScrollState)
+    $('[data-header-burger]').toggleClass('header__top-burger--follow')
+  })
+
+  // burger scroll efferct
+  let TopScrollState = false
+
+  setInterval(() => {
+    if ( TopScrollState === false && $(window).scrollTop() > 1 && !($('[data-header-top]').hasClass('header__top--open')) ) {
+      $('[data-header-burger]').addClass('header__top-burger--follow')
+
+      TopScrollState = true
+    }
+    else if ( (TopScrollState === true && $(window).scrollTop() === 0) ) {
+      $('[data-header-burger]').removeClass('header__top-burger--follow')
+      TopScrollState = false
+    }
+  }, 0)
+
   // smooth scrolling
   $('a[href^=\\#]').on('click', function(event){     
     event.preventDefault()
@@ -86,29 +111,4 @@ $(function() {
   }
 
   $('.contacts__form').on('submit', onSubmit)
-
-  // burger
-  $('.header__top-burger, .header__nav-item a').on('click', function() {
-    if ( $('.header__top-burger').css('display') === 'none' ) return
-
-    $('.header__top').toggleClass('header__top--open')
-
-    if (TopScrollState)
-    $('[data-header-burger]').toggleClass('header__top-burger--follow')
-  })
-
-  // burger scroll efferct
-  let TopScrollState = false
-
-  setInterval(() => {
-    if ( TopScrollState === false && $(window).scrollTop() > 1 && !($('[data-header-top]').hasClass('header__top--open')) ) {
-      $('[data-header-burger]').addClass('header__top-burger--follow')
-
-      TopScrollState = true
-    }
-    else if ( (TopScrollState === true && $(window).scrollTop() === 0) ) {
-      $('[data-header-burger]').removeClass('header__top-burger--follow')
-      TopScrollState = false
-    }
-  }, 0)
 })
