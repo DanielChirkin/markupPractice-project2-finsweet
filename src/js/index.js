@@ -8,10 +8,6 @@ import "slick-carousel/slick/slick.css"
 import "@/scss/style.scss"
 
 import faqAccordion from './plugings/accordion-plugin.js'
-import initMap from "./utils/contacts-google-maps.js"
-
-// google maps
-window.initMap = initMap
 
 $(function() {
   // burger
@@ -112,3 +108,8 @@ $(function() {
 
   $('.contacts__form').on('submit', onSubmit)
 })
+
+import initMap from "./utils/contacts-google-maps.js"
+
+// google maps
+window.initMap = initMap
