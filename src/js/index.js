@@ -297,5 +297,6 @@ $(function() {
   $('.contacts__form').on('submit', onSubmit)
 
   // google maps
+  
   initMap()
 })
