@@ -1,7 +1,9 @@
+var map
+
 export default function contactsMap() {
   const ADDRESS = {lat: 40.7048195, lng: -74.0106324}
 
-  const map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('map'), {
     center: ADDRESS,
     zoom: 13,
     disableDefaultUI: true,
