@@ -12,7 +12,7 @@ import initMap from "./utils/contacts-google-maps.js"
 
 // google maps
 console.log('initMAP: index.js');
-window.document = initMap
+window.initMap = initMap
 
 $(function() {
   // burger
