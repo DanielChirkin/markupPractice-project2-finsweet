@@ -10,7 +10,10 @@ import "@/scss/style.scss"
 import faqAccordion from './plugings/accordion-plugin.js'
 import initMap from "./utils/contacts-google-maps.js"
 
-console.log('index.js');
+// google maps
+console.log('initMAP: index.js');
+window.document = initMap
+
 $(function() {
   // burger
   $('[data-header-burger], .header__nav-item a').on('click', function() {
@@ -109,8 +112,4 @@ $(function() {
   }
 
   $('.contacts__form').on('submit', onSubmit)
-
-  // google maps
-  console.log('initMAP: index.js');
-  window.document = initMap
 })
