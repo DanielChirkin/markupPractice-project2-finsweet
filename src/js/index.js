@@ -111,6 +111,6 @@ $(function() {
   $('.contacts__form').on('submit', onSubmit)
 
   // google maps
-
-  initMap()
+  console.log('initMAP: index.js');
+  window.document = initMap
 })
