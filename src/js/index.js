@@ -10,7 +10,7 @@ import "@/scss/style.scss"
 import faqAccordion from './plugings/accordion-plugin.js'
 import initMap from "./utils/contacts-google-maps.js"
 
-
+console.log('index.js');
 $(function() {
   // burger
   $('[data-header-burger], .header__nav-item a').on('click', function() {
