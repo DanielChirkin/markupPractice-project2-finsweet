@@ -11,8 +11,8 @@ import faqAccordion from './plugings/accordion-plugin.js'
 import initMap from "./utils/contacts-google-maps.js"
 
 // google maps
-console.log('initMAP: index.js');
-window.initMap = initMap
+// console.log('initMAP: index.js');
+// window.initMap = initMap
 
 $(function() {
   // burger
@@ -112,4 +112,6 @@ $(function() {
   }
 
   $('.contacts__form').on('submit', onSubmit)
+
+  initMap()
 })
